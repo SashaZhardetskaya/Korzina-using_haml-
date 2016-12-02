@@ -1,0 +1,71 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 0 0;
+}
+
+ul li {
+  color: #a8abad;
+  font-size: 14px;
+  margin: 0 50px 0 0;
+  list-style: none;
+  margin-right: 16px;
+}
+
+ul li:after {
+  content: "\203A";
+  font-size: 15px;
+}
+
+ul li:last-child:after {
+  content: "";
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 200;
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 50px 0 0;
+}
+
+ol li {
+  text-transform: uppercase;
+  margin: 0 50px 0 0;
+  color: #7d7d7d;
+  font-size: 24px;
+}
+
+.active {
+  color: black;
+}
+
+.row {
+  margin-top: 50px;
+  position: relative;
+  border: 1px solid;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 40px;
+  top: -24px;
+  background: url(tab_new.png) no-repeat 50% 50%;
+}
+
+.img {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
